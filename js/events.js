@@ -16,8 +16,8 @@ export default function(
     timer.countdown()
     sound.pressButton()
     sound.bgAudio.play()
-    buttonSoundOn.classList.add('hide')
-    buttonSoundOff.classList.remove('hide')
+    buttonSoundOn.classList.remove('hide')
+    buttonSoundOff.classList.add('hide')
   })
   
   buttonPause.addEventListener('click', function() {
@@ -25,8 +25,8 @@ export default function(
     timer.hold()
     sound.pressButton()
     sound.bgAudio.pause()
-    buttonSoundOn.classList.remove('hide')
-    buttonSoundOff.classList.add('hide')
+    buttonSoundOn.classList.add('hide')
+    buttonSoundOff.classList.remove('hide')
   })
   
   buttonStop.addEventListener('click', function() {
@@ -34,8 +34,8 @@ export default function(
     timer.reset()
     sound.pressButton()
     sound.bgAudio.pause()
-    buttonSoundOn.classList.remove('hide')
-    buttonSoundOff.classList.add('hide')
+    buttonSoundOn.classList.add('hide')
+    buttonSoundOff.classList.remove('hide')
   })
   
   buttonSoundOff.addEventListener('click', function() {
